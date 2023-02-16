@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 DISCORD_TOKEN = os.environ["DISCORD_TOKEN"]
 
-bot = commands.Bot()
+bot = commands.Bot("&", sync_commands_debug=True)
 
 # When the bot is ready, run this code.
 @bot.event
